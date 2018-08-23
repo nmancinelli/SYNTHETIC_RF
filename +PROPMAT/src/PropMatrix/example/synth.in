@@ -1,0 +1,6 @@
+8.55      (velocity  of incident wave)
+2         (no. of layers, including half-space)
+2048      (no. of FFT)
+5         (no. of points per second, npps)
+300       (cutting frequency)
+1         (2=bottom motion, 1= surface motion)

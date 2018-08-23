@@ -1,0 +1,6 @@
+Comments from Ved, June 2012:
+
+
+
+Actually, Jesse and I were working with our ("our" as in Brown) synthetics codes (propagator matrix ones based on Crampin) and we kept on having that problem when every once in a while the codes would crash (Heather and I both encountered this problem last year). Now, because we are doing Markov Chain Monte Carlo, we cannot afford to have the 100,000th model crash, so we really delved into the codes and found a bug in them! I am pretty sure the bug is compiler and computer architecture dependent, so don't freak out, but I would recommend that everyone at Brown who uses these codes adds the line "real*8 ql1, theta" to the beginning of both synth.f and sourc1.f and re-compile. The absence of this line was - at least for us - causing inconsistent read/write of the binary file called synth.out30 (essentially, synth writes a set of values to this file, but when sourc1 reads the values, they change because the code doesn't know how big they should be (float32 vs int32?)). How the code ever worked (or why we got results that made sense despite the error) is beyond me.
+
