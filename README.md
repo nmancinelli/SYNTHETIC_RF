@@ -4,7 +4,7 @@ This package contains several subroutines that get the job done, including a For
 
 The package runs flawlessly on my mac, which is running Matlab 2016a.
 
-**Note**:  This package as it stands should be used only to obtain preliminary results.  If a quantitative comparision between data and synthetics is desired, I strongly recommend replacing the subroutines in this package with those used on the data.  Of particular importance is filtering, windowing, and deconvolution.
+**Note**:  This package as it stands should be used only to obtain preliminary results.  If a quantitative comparison between data and synthetics is desired, I strongly recommend replacing the subroutines in this package with those used on the data.  Of particular importance is filtering, windowing, and deconvolution.
 
 ## Getting Started
 
