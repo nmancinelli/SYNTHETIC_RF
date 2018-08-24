@@ -6,11 +6,11 @@ function [SRF] = deconvolve(SRF)
     t_trun = 5.;
     gauss_t = 0.7;
     accept_mis = 0.00001;
-    P = SRF.us;
-    D = SRF.up;
+    Parent = SRF.us;
+    Daught = SRF.up;
     dt = SRF.time(2)-SRF.time(1);
 
-    [RF_Time, RF] = DECONVOLUTION.IDRF(P,D,dt,t_for,t_trun,gauss_t,accept_mis);
+    [RF_Time, RF] = DECONVOLUTION.IDRF(Parent,Daught,dt,t_for,t_trun,gauss_t,accept_mis);
     
     %Flip polarity
     RF = -RF;
