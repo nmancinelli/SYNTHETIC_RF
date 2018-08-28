@@ -8,7 +8,7 @@ function [depth, vpv, vsv, rho] = load_from_card_file ( path2cardfile )
     
 
     fprintf('  loading %s ... \n', path2cardfile)
-    fid = fopen('STW105.txt');
+    fid = fopen(path2cardfile);
 
     %read header lines
     for i = 1:3 

@@ -1,4 +1,4 @@
-function [SRF] = run_propmat(SRF)
+function [SRF] = compute_synthetic_wvfrms(SRF)
     zt = SRF.VelocityModel.zlayt;
     zb = SRF.VelocityModel.zlayb;
     vp = SRF.VelocityModel.vplay;

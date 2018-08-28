@@ -23,7 +23,7 @@ ray_parameter = 0.10;
 period = 7.0;
 
 SRF = SyntheticRF(VM, ray_parameter, period);
-SRF = SRF.run_propmat();
+SRF = SRF.compute_synthetic_wvfrms();
 
 %% Step 3: Rotate the synthetics, deconvolve, and migrate to depth
 SRF = SRF.rotate();

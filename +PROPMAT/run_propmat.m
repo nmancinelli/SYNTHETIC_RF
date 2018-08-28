@@ -69,8 +69,8 @@ system(['chmod +u+x ' execfile]);
 %% do PropMatrix on it
 [status,cmdout] = system(['./',execfile]);
 
-fprintf('status = %s\n', status)
-disp(status)
+if status ~= 0; fprintf('propmat execution error, status = %d\n', status); end
+
 
 %% read PropMatrix output
 [traces,tt] = PROPMAT.readPROPMATtr(odatfile);
