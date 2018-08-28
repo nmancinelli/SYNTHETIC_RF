@@ -67,7 +67,7 @@ PROPMAT.writePROPMATexecfile( execfile,modfile,ifile,ofile0,ofile1,ofile2,odatfi
 system(['chmod +u+x ' execfile]);
 
 %% do PropMatrix on it
-[status,cmdout] = system(['./',execfile]);
+[status,cmdout] = system(['./',execfile,' 1> propmat.out 2> propmat.err']);
 
 if status ~= 0; fprintf('propmat execution error, status = %d\n', status); end
 
