@@ -2,3 +2,5 @@ propmat.err
 propmat.out
 eg.*
 eg_*
+PropMatrix/bin/*
+PropMatrix/src/*.o
