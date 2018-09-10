@@ -77,7 +77,7 @@ if status ~= 0; fprintf('propmat execution error, status = %d\n', status); end
 
 %% delete files
 % delete(execfile,odatfile,ifile,ofile1,ofile2,'synth.out');
-delete(modfile,execfile,odatfile,ifile,ofile0,ofile1,ofile2);
+%delete(modfile,execfile,odatfile,ifile,ofile0,ofile1,ofile2);
 % % plot
 % figure(2); clf, hold on
 % comps = {'VERTICAL','RADIAL','TRANSVERSE'}; traces = traces(:,[3,1,2]);

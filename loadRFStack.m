@@ -72,4 +72,3 @@ set(gca,'YDir','reverse');
 title(sprintf('%s.%s',network,station));
 ylabel('Depth (km)');
 xlabel('RF Amplitude (Relative to Parent)');
-

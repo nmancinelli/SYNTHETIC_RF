@@ -27,7 +27,7 @@ SRF = SRF.compute_synthetic_wvfrms();
 
 %% Step 3: Rotate the synthetics, deconvolve, and migrate to depth
 SRF = SRF.rotate();
-SRF = SRF.deconvolve();
+SRF = SRF.deconvolve('ETMTM');  %ETMTM for Extended Time MultTaper Method or IDRF for Junlin's Time Domain routine
 SRF = SRF.migrate_to_depth();
 
 %Note: One could add fancier windowing and masking features, if needed.
